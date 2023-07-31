@@ -1,0 +1,32 @@
+/* history.page.scss */
+ion-content {
+    --ion-background-color: #0c0101; /* Latar belakang ungu */
+  }
+  
+  ion-title {
+    color: #ffff; /* Tulisan abu-abu tua */
+  }
+  
+  ion-item {
+    --ion-background-color: white; /* Latar belakang putih */
+  }
+  
+  ion-label {
+    color: #fff; /* Tulisan putih */
+  }
+  
+  ion-note {
+    color: #9c9999; /* Tulisan abu-abu tua */
+  }
+  
+  ion-button {
+    --ion-background-color: #6c63ff; /* Latar belakang ungu */
+    --ion-color: #ffffff; /* Tulisan putih */
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+    background-color: #0c0101;
+  }
+  

@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      History
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let data of formData">
+      <ion-label>Name: {{ data.nama }}</ion-label>
+      <ion-note slot="end">NIK: {{ data.nik }}, Address: {{ data.alamat }}, Message: {{ data.message }}</ion-note>
+      <!-- Tombol hapus histori -->
+      <ion-button (click)="hapusHistori(data)" color="danger" slot="end">Hapus</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <!-- Peta -->
+  <div id="map" style="height: 300px;"></div>
+
+  <!-- Tombol kembali ke halaman beranda -->
+  <ion-button routerLink="/home" expand="full">Back to Home</ion-button>
+</ion-content>
